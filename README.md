@@ -74,7 +74,8 @@ This guide will help you set up and run your gesture-controlled robot using **Ar
    ```bash
    pip install -r requirements.txt
 
-###Running the Code
+
+**Running the Code**
 
 1. **Open your preferred Python environment**  
    - Example: VS Code, PyCharm, Jupyter Notebook, or Terminal.
