@@ -33,18 +33,27 @@ The process is divided into three parts: **Arduino configuration**, **ESP32 conf
    - This should be the hotspot that the ESP32 will use to communicate with your Python script.  
    - Example: Hotspot **SSID** `POCO`, password `qevt1738`.
 
-3. **Load ESP32 code in Arduino IDE**  
+3. **Enter Wi-Fi credentials in the ESP32 code**  
+   - In the provided ESP32 code, locate the section for Wi-Fi configuration.  
+   - Replace the placeholder values with your hotspot’s **SSID** and **password**.  
+   - Example:  
+     ```cpp
+     const char* ssid = "POCO";
+     const char* password = "qevt1738";
+     ```
+
+4. **Load ESP32 code in Arduino IDE**  
    - Paste or open the provided ESP32 code in Arduino IDE.
 
-4. **Select the correct board**  
+5. **Select the correct board**  
    - Go to:  
      `Tools → Board → ESP32 Arduino → ESP32 Dev Module` ⚙
 
-5. **Verify and Upload**  
+6. **Verify and Upload**  
    - ✅ Click **Verify** to compile the code.  
    - 📤 Click **Upload** to send the code to your ESP32.
 
-6. **Copy ESP32 IP Address to Python Code**  
+7. **Copy ESP32 IP Address to Python Code**  
    - Open the **Serial Monitor** in Arduino IDE after uploading.  
    - Locate the **IP address** printed in the output.  
    - Copy this IP address and paste it into the variable `x` inside your Python code.
@@ -59,15 +68,10 @@ The process is divided into three parts: **Arduino configuration**, **ESP32 conf
 2. **Load the Python script**  
    - Paste or open the provided Python code in your environment.
 
-3. **Enter your Wi-Fi credentials in the Python script**  
-   - Inside the designated section of the Python code, enter:  
-     - **Hotspot SSID** (e.g., `POCO`)  
-     - **Hotspot password** (e.g., `qevt1738`)  
-
-4. **Paste the ESP32 IP address**  
+3. **Paste the ESP32 IP address**  
    - In the Python code, locate the variable `x` and set it to the ESP32’s IP address you copied earlier.
 
-5. **Run the script**  
+4. **Run the script**  
    - ▶ Execute the Python script.  
    - 🎉 Your gesture-controlled robot is now ready to operate!
 
@@ -89,3 +93,4 @@ Show the following number of fingers in front of the camera to move the bot:
 
 ✅ **You have successfully set up your Gesture-Controlled Robot.**  
 Move your hand, and watch it respond!
+
