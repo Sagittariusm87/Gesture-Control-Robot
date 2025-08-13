@@ -26,34 +26,25 @@ The process is divided into three parts: **Arduino configuration**, **ESP32 conf
 
 ## Part 2: ESP32 Setup 📡
 
-1. **Configure Wi-Fi Hotspot**
-   - Change your hotspot **Name (SSID)** to:  
-     ```
-     POCO
-     ```
-   - Change your hotspot **Password** to:  
-     ```
-     qevt1738
-     ```
+1. **Connect ESP32 to your computer**  
+   - Use a USB cable to connect the ESP32 board to your computer.  
 
-2. **Connect ESP32 to your computer**  
-   - Use a USB cable to connect the ESP32 board to your computer.
+2. **Ensure both your laptop and ESP32 are connected to the same Wi-Fi hotspot**  
+   - This should be the hotspot that the ESP32 will use to communicate with your Python script.  
+   - Example: Hotspot **SSID** `POCO`, password `qevt1738`.
 
-3. **Connect ESP32 to the configured hotspot**  
-   - Ensure the ESP32 is connected to the hotspot you just set.
-
-4. **Load ESP32 code in Arduino IDE**  
+3. **Load ESP32 code in Arduino IDE**  
    - Paste or open the provided ESP32 code in Arduino IDE.
 
-5. **Select the correct board**  
+4. **Select the correct board**  
    - Go to:  
      `Tools → Board → ESP32 Arduino → ESP32 Dev Module` ⚙
 
-6. **Verify and Upload**  
+5. **Verify and Upload**  
    - ✅ Click **Verify** to compile the code.  
    - 📤 Click **Upload** to send the code to your ESP32.
 
-7. **Copy ESP32 IP Address to Python Code**  
+6. **Copy ESP32 IP Address to Python Code**  
    - Open the **Serial Monitor** in Arduino IDE after uploading.  
    - Locate the **IP address** printed in the output.  
    - Copy this IP address and paste it into the variable `x` inside your Python code.
