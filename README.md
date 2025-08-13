@@ -58,6 +58,23 @@ This guide will help you set up and run your gesture-controlled robot using **Ar
 ---
 
 ## Part 3: Python Setup 🐍
+### Install Python Requirements 📦
+
+1. **Download the `requirements.txt` file**  
+   - This file is included in the repository.  
+
+2. **Place it in your working directory**  
+   - The same folder where your Python script is stored.  
+
+3. **Open a terminal in that directory**  
+   - On Windows: Shift + Right Click → "Open PowerShell here"  
+   - On Mac/Linux: Use the `cd` command to navigate to the folder.  
+
+4. **Install all dependencies**  
+   ```bash
+   pip install -r requirements.txt
+
+###Running the Code
 
 1. **Open your preferred Python environment**  
    - Example: VS Code, PyCharm, Jupyter Notebook, or Terminal.
