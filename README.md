@@ -53,6 +53,11 @@ The process is divided into three parts: **Arduino configuration**, **ESP32 conf
    - ✅ Click **Verify** to compile the code.  
    - 📤 Click **Upload** to send the code to your ESP32.
 
+7. **Copy ESP32 IP Address to Python Code**  
+   - Open the **Serial Monitor** in Arduino IDE after uploading.  
+   - Locate the **IP address** printed in the output.  
+   - Copy this IP address and paste it into the variable `x` inside your Python code.
+
 ---
 
 ## Part 3: Running the Python Environment 🐍
@@ -63,7 +68,15 @@ The process is divided into three parts: **Arduino configuration**, **ESP32 conf
 2. **Load the Python script**  
    - Paste or open the provided Python code in your environment.
 
-3. **Run the script**  
+3. **Enter your Wi-Fi credentials in the Python script**  
+   - Inside the designated section of the Python code, enter:  
+     - **Hotspot SSID** (e.g., `POCO`)  
+     - **Hotspot password** (e.g., `qevt1738`)  
+
+4. **Paste the ESP32 IP address**  
+   - In the Python code, locate the variable `x` and set it to the ESP32’s IP address you copied earlier.
+
+5. **Run the script**  
    - ▶ Execute the Python script.  
    - 🎉 Your gesture-controlled robot is now ready to operate!
 
